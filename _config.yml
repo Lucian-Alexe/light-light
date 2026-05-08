@@ -1,3 +1,9 @@
 url: "https://lucian-alexe.github.io"
 baseurl: ""
 title: "Light & Light Academy" 
+description: "Light & Light Academy is a platform dedicated to providing high-quality educational content and resources for learners of all ages. Our mission is to empower individuals with knowledge and skills through engaging and accessible learning materials. Whether you're a student, educator, or lifelong learner, Light & Light Academy offers a wide range of courses, tutorials, and articles to help you achieve your learning goals."
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap

@@ -1,8 +1,8 @@
 ---
-layout: default
-title: "Happy Jekylling!"
+layout: home
+title: Light & Light Academy
 ---
 
-## You're ready to go!
+## Welcome to Light & Light Academy
 
-Start developing your Jekyll website.
+
