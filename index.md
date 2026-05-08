@@ -5,4 +5,4 @@ title: Light & Light Academy
 
 ## Welcome to Light & Light Academy
 
-
+Welcome!
