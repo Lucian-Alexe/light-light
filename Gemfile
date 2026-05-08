@@ -1,12 +1,4 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.4"
-gem "bundler"
-
-gem "minima", "~> 2.5"
-
-group :jekyll_plugins do
-  gem "jekyll-feed"
-  gem "jekyll-seo-tag"
-  gem "jekyll-sitemap"
-end
+# This version matches what GitHub Pages uses
+gem "github-pages", group: :jekyll_plugins
