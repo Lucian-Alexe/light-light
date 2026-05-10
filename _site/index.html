@@ -16,23 +16,28 @@
   <body>
     <main>
     <header class="container-fluid homepage-header">
-        <div class="container-xl mx-auto py-5 ">
-            <div class="logo mx-auto pt-3 pb-5"><img src="/assets/img/logo.svg" class="img-fluid mx-auto d-block" /></div>
+        <div class="container-xl mx-auto py-3 ">
+            <div class="logo mx-auto pt-2 pb-2"><img src="/assets/img/logo.svg" class="img-fluid mx-auto d-block" /></div>
             <div class="mt-5 mb-5 text-center"><h1>Don't fix the <em>symptoms</em>.<br />Rebuild the <em>system</em>.</h1></div>
-            <div class="row">
-                <div class="col-md-7 align-self-center">
-                    <img src="/assets/img/hero-image.png" class="img-fluid" />                   
-                </div>
-                <div class="col-md-5 align-self-center">
+            <div class="col-md-7 mx-auto text-center ">
                     <p class="large-text">Light &amp; Light Academy exists for people who are done with half-measures. We dive into every dimension of <em>you</em>, from your career to your relationships, finances, health and inner life and we make a full reboot. Not one problem at a time.</p>
                     <p class="large-text mt-4"><strong>All of it, at once, from the root.</strong></p>
                     <a href="" class="button-cta my-3">I'm ready to do the real work</a>
+            </div>
+            <div class="container mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-10"> 
+                    <div class="parallax-wrapper">
+                        <img src="/assets/img/back-image.png" id="rotating-wheel" class="img-fluid wheel-layer" alt="Background" />
+                        <img src="/assets/img/front-image.png" class="img-fluid woman-layer" alt="Foreground" />   
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <section>
-        <div class="container-xl mx-auto py-5 ">
+        <div class="container-xl mx-auto py-3 ">
         <div class="intro-feature-box p-5 my-4">
             <h2 class="text-center mt-3 mb-3 text-white">No More Half-Measures</h2>
             <div class="row gx-5">
@@ -113,18 +118,36 @@
     </section>
 </main>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-  const accordionElement = document.getElementById('lifeAccordion');
-  const graphic = document.getElementById('rotating-graphic');
+        document.addEventListener('DOMContentLoaded', function () {
+    const accordionElement = document.getElementById('lifeAccordion');
+    const graphic = document.getElementById('rotating-graphic');
 
-  accordionElement.addEventListener('show.bs.collapse', function (event) {
-    // Find the button that was clicked
-    const button = event.target.previousElementSibling.querySelector('.accordion-button');
-    const degrees = button.getAttribute('data-rotate');
-    
-    // Apply rotation
-    graphic.style.transform = `rotate(${degrees}deg)`;
-  });
+    accordionElement.addEventListener('show.bs.collapse', function (event) {
+        // Find the button that was clicked
+        const button = event.target.previousElementSibling.querySelector('.accordion-button');
+        const degrees = button.getAttribute('data-rotate');
+        
+        // Apply rotation
+        graphic.style.transform = `rotate(${degrees}deg)`;
+    });
+    });
+
+// parallax.js
+
+window.addEventListener('scroll', function() {
+  const wheel = document.getElementById('rotating-wheel');
+  
+  // Get current scroll position
+  const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+  
+  // Rotation calculation
+  // Increase/decrease 0.2 to change the spin speed
+  const degree = scrollY * 0.03;
+  
+  // Apply rotation
+  if (wheel) {
+    wheel.style.transform = `rotate(${degree}deg)`;
+  }
 });
 </script>
 

@@ -46,83 +46,59 @@ input{
 }
 
 
-/* ------------------------------
- | MODULAR TYPE SCALE
- | ------------------------------
- | Helps you create type scales that bring natural rhythm,
- | consistency, and balance to your designs.
- |
- | BASE VALUES:
- | - Font Size: 20px / 1.25rem
- | - Line Height: 24px / 1.2
- | - Letter Spacing: 3.5% / 0.035em
- |
- | SCALE:
- | - Ratio: 1.26 - Major Third
- |
- | LINE GRID:
- | - Grid Unit: 4px / 0.25rem
- |
- |
- | Scale ratio is calculated using an equal temperament tuning system.
- | Created with Precise Type / https://precise-type.com
- | Tools & Models by Adonis Raul Raduca
- */
-
-/* --- Font Sizes --- */
 
 :root {
   /* below the base */
-  --font-size-2b: 0.8125rem;
-  --font-size-1b: 1rem;
+  --font-size-2b: 0.6875rem;
+  --font-size-1b: 0.875rem;
 
   /* the base */
-  --font-size: 1.25rem;
+  --font-size: 1.125rem;
 
   /* above the base */
-  --font-size-1: 1.5625rem;
-  --font-size-2: 2rem;
-  --font-size-3: 2.5rem;
-  --font-size-4: 3.125rem;
-  --font-size-5: 3.9375rem;
-  --font-size-6: 5rem;
+  --font-size-1: 1.4375rem;
+  --font-size-2: 1.8125rem;
+  --font-size-3: 2.25rem;
+  --font-size-4: 2.8125rem;
+  --font-size-5: 3.5625rem;
+  --font-size-6: 4.5rem;
 }
 
 /* --- Line Heights --- */
 
 :root {
   /* below the base */
-  --line-height-2b: 1.2308;
-  --line-height-1b: 1.25;
+  --line-height-2b: 1.4545;
+  --line-height-1b: 1.4286;
 
   /* the base */
-  --line-height: 1.2;
+  --line-height: 1.3333;
 
   /* above the base */
-  --line-height-1: 1.12;
-  --line-height-2: 1.125;
-  --line-height-3: 1.1;
-  --line-height-4: 1.12;
-  --line-height-5: 1.0794;
-  --line-height-6: 1.05;
+  --line-height-1: 1.2174;
+  --line-height-2: 1.2414;
+  --line-height-3: 1.2222;
+  --line-height-4: 1.1556;
+  --line-height-5: 1.1228;
+  --line-height-6: 1.1111;
 }
 
 /* --- Letter Spacings --- */
 
 :root {
   /* below the base */
-  --letter-space-2b: 0.07em;
-  --letter-space-1b: 0.0513em;
+  --letter-space-2b: 0.0764em;
+  --letter-space-1b: 0.0536em;
 
   /* the base */
   --letter-space: 0.035em;
 
   /* above the base */
-  --letter-space-1: 0.022em;
-  --letter-space-2: 0.0106em;
+  --letter-space-1: 0.0209em;
+  --letter-space-2: 0.0103em;
   --letter-space-3: 0.0025em;
   --letter-space-4: -0.004em;
-  --letter-space-5: -0.0094em;
+  --letter-space-5: -0.0095em;
   --letter-space-6: -0.0137em;
 }
 
@@ -149,7 +125,7 @@ body {
 /* --- Headers --- */
 
 :is(h1, h2, h3) {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h1 {
@@ -217,7 +193,7 @@ strong {
 }
 
 .logo img {
-  max-height:120px;
+  max-height:100px;
   width:auto;
 }
 
@@ -250,7 +226,32 @@ strong {
   color:white;
 }
 
+/* parallax.css */
 
+.parallax-wrapper {
+  position: relative;
+  width: 100%;
+  /* Ensures no weird scrollbars if the wheel rotates outside the box */
+  overflow: hidden; 
+}
+
+.wheel-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  /* Keeps the rotation smooth on high-refresh-rate screens */
+  will-change: transform;
+  pointer-events: none;
+}
+
+.woman-layer {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  display: block;
+}
 
 .intro-feature-box{
   background-color: var(--color-primary);
@@ -266,8 +267,9 @@ strong {
 .intro-feature-box h3::before {
   content: "• ";
   display: block;
-  color: white;
-  margin-bottom:0.3em;
+  color: #13b3e5;
+ 
+  font-size:2em;
 }
 
 .small-container {
@@ -300,7 +302,7 @@ strong {
   box-shadow: none;
 }
 
-/* Custom Color Classes */
+/* Custom Color Classes for Accordion */
 .border-green { border-color: 2px solid #029688 !important; }
 .text-green { color: #029688; }
 
@@ -352,13 +354,21 @@ strong {
 
 @media (max-width: 650px) {
   h1 {
-    font-size: var(--font-size-5);
-    line-height: var(--line-height-5);
-    letter-spacing: var(--letter-space-5);
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+    letter-spacing: var(--letter-space-4);
+  }
+
+  h2 {
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-3);
+    letter-spacing: var(--letter-space-3);
   }
 
 .logo img {
-  max-height:100px;
+  max-height:70px;
   width:auto;
 }
 }
+
+
