@@ -143,6 +143,7 @@ body {
   font-size: var(--font-size);
   line-height: var(--line-height);
   letter-spacing: var(--letter-space);
+  background-color: var(--color-background);
 }
 
 /* --- Headers --- */
@@ -164,6 +165,8 @@ h2 {
   line-height: var(--line-height-4);
   letter-spacing: var(--letter-space-4);
   font-family: var(--font-family-serif);
+    font-weight: 400;
+  color:var(--color-primary);
 }
 h3 {
   font-size: var(--font-size-1);
@@ -230,12 +233,24 @@ strong {
   display:inline-block;
   border-radius: 0.6em;
   font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.35s ease;
+}
+
+.button-cta::after {
+  content: "➜";
+  margin-left: 0.3em;
+  transition: all 0.35s ease;
 }
 
 .button-cta:hover {
-  background-color: var(--color-secondary);
-
+  background-color: var(--color-primary);
+  border:2px solid white;
+  transition: all 0.3s ease;
+  color:white;
 }
+
+
 
 .intro-feature-box{
   background-color: var(--color-primary);
@@ -253,6 +268,62 @@ strong {
   display: block;
   color: white;
   margin-bottom:0.3em;
+}
+
+.small-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+/* Remove default Bootstrap styling */
+.custom-accordion-item {
+  border-radius: 12px !important;
+  overflow: hidden;
+  border: 2px solid;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Custom Color Classes */
+.border-green { border-color: 2px solid #029688 !important; }
+.text-green { color: #029688; }
+
+.border-blue { border-color: #4dbce9 !important; }
+.text-blue { color: #4dbce9; }
+
+.border-darkblue { border-color: #3b5998 !important; }
+.text-darkblue { color: #3b5998; }
+
+/* Remove the default arrow rotation if you want a cleaner look */
+.accordion-button::after {
+  display: none; /* Optional: hides the caret arrow */
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: 2px solid;
+    border-top-color: currentcolor;
+}
+
+.accordion-item:first-of-type {
+  border: 2px solid #029688;
+  
+}
+
+#rotating-graphic {
+  transition: transform 0.6s ease-in-out;
+  max-height:500px;}
+
+.methodology-box {
+  max-width: 960px;
+  font-family: var(--font-family-sans);
 }
 
 @media (max-width: 650px) {

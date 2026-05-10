@@ -9,12 +9,12 @@ title: Light & Light Academy
             <div class="logo mx-auto pt-3 pb-5"><img src="{{ "/assets/img/logo.svg" | relative_url }}" class="img-fluid mx-auto d-block"></div>
             <div class="mt-5 mb-5 text-center"><h1>Don't fix the <em>symptoms</em>.<br>Rebuild the <em>system</em>.</h1></div>
             <div class="row">
-                <div class="col-md-7 align-self-center">
-                    <img src="{{ "/assets/img/hero-image.png" | relative_url }}" class="img-fluid">
+                <div class="col-md-6 align-self-center">
+                    <img src="{{ "/assets/img/hero-image.png" | relative_url }}" class="img-fluid">                   
                 </div>
-                <div class="col-md-5 align-self-center">
+                <div class="col-md-6 align-self-center">
                     <p class="xlarge-text">Light & Light Academy exists for people who are done with half-measures. We look at everything, from your career to your relationships, finances, health and inner life and we make a full reboot. Not one problem at a time.</p>
-                    <p class="xlarge-text"><strong>All of it, at once, from the root.</strong></p>
+                    <p class="xlarge-text mt-4"><strong>All of it, at once, from the root.</strong></p>
                     <a href="" class="button-cta my-3">I'm ready to do the real work</a>
                 </div>
             </div>
@@ -41,4 +41,67 @@ title: Light & Light Academy
         </div>
         </div>
     </section>
+    <section class="mt-5 mb-5">
+        <div class="container-xl mx-auto ">
+        <h2 class="text-center mb-5">The Dandelion Methodology</h2>
+        <p class="text-center small-container">Our 8-point methodology is at the heart of our academy. 
+        It is a complete map of your life, built on the belief that nothing exists in isolation. Your burnout is connected to your boundaries. Your finance blocks are connected to your self-worth. Your relationshps are connected to the role you've been playing since childhood. We work across all eight at once, because that's how real life actually works.</p>
+        </div>
+            <div class="container mt-2 methodology-box" >
+            <div class="text-center mb-4">
+                <img src="/assets/img/round-shape.png" id="rotating-graphic" alt="Graphic" class="img-fluid mx-auto">
+            </div>
+            <div class="accordion" id="lifeAccordion">       
+                <div class="accordion-item custom-accordion-item border-green mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold text-green" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCareer" data-rotate="0">
+                    CAREER
+                    </button>
+                </h2>
+                <div id="collapseCareer" class="accordion-collapse collapse show" data-bs-parent="#lifeAccordion">
+                    <div class="accordion-body">
+                    <p class="small fw-bold">What is career to you? What are your values?</p>
+                    <p class="text-muted small">We get into the real stuff: identity, fear, and ambition.</p>
+                    <a href="#" class="btn btn-dark btn-sm rounded-pill px-3">See a sample of the learning module</a>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item custom-accordion-item border-blue mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold text-blue" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHealth" data-rotate="45">
+                    Health
+                    </button>
+                </h2>
+                <div id="collapseHealth" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
+                    <div class="accordion-body">Health content goes here...</div>
+                </div>
+                </div>
+                <div class="accordion-item custom-accordion-item border-darkblue mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold text-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFamily" data-rotate="90">
+                    Family
+                    </button>
+                </h2>
+                <div id="collapseFamily" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
+                    <div class="accordion-body">Family content goes here...</div>
+                </div>
+                </div>
+                </div>
+            </div>
+    </section>
 </main>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+  const accordionElement = document.getElementById('lifeAccordion');
+  const graphic = document.getElementById('rotating-graphic');
+
+  accordionElement.addEventListener('show.bs.collapse', function (event) {
+    // Find the button that was clicked
+    const button = event.target.previousElementSibling.querySelector('.accordion-button');
+    const degrees = button.getAttribute('data-rotate');
+    
+    // Apply rotation
+    graphic.style.transform = `rotate(${degrees}deg)`;
+  });
+});
+</script>
