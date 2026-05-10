@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:before, *:after { box-sizing: border-box; }
 
 html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; text-size-adjust: none; }
@@ -41,10 +42,28 @@ h3 { font-size: var(--font-size-1); line-height: var(--line-height-1); letter-sp
 
 p { font-family: var(--font-family-sans); font-weight: 400; font-size: var(--font-size); margin-bottom: 1rem; color: var(--color-primary); }
 
+em { font-style: italic; }
+
+strong { font-weight: 600; }
+
 /* --- Alternative Text Sizes --- */
 :is(p, span, a, ul, ol, dl, li, dt, dd, label, blockquote, code).small-text { font-size: var(--font-size-1b); line-height: var(--line-height-1b); letter-spacing: var(--letter-space-1b); }
 :is(p, span, a, ul, ol, dl, li, dt, dd, label, blockquote, code).large-text { font-size: var(--font-size-1); line-height: var(--line-height-1); letter-spacing: var(--letter-space-1); }
+:is(p, span, a, ul, ol, dl, li, dt, dd, label, blockquote, code).xlarge-text { font-size: var(--font-size-2); line-height: var(--line-height-2); letter-spacing: var(--letter-space-2); }
 
 .homepage-header { background-color: var(--color-background); }
 
 .logo img { max-height: 150px; width: auto; }
+
+.button-cta { font-family: var(--font-family-sans); font-size: var(--font-size); background-color: white; border: 2px solid var(--color-secondary); color: var(--color-primary); padding: 1.2em 1em; text-decoration: none; margin-top: 2em 0; display: inline-block; border-radius: 0.6em; font-weight: 600; }
+
+.button-cta:hover { background-color: var(--color-secondary); }
+
+.intro-feature-box { background-color: var(--color-primary); color: white; border-radius: 0.9em; }
+
+.intro-feature-box p { color: white; }
+
+.intro-feature-box h3::before { content: "• "; display: block; color: white; margin-bottom: 0.3em; }
+
+@media (max-width: 650px) { h1 { font-size: var(--font-size-5); line-height: var(--line-height-5); letter-spacing: var(--letter-space-5); }
+  .logo img { max-height: 100px; width: auto; } }
