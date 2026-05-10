@@ -9,12 +9,12 @@ title: Light & Light Academy
             <div class="logo mx-auto pt-3 pb-5"><img src="{{ "/assets/img/logo.svg" | relative_url }}" class="img-fluid mx-auto d-block"></div>
             <div class="mt-5 mb-5 text-center"><h1>Don't fix the <em>symptoms</em>.<br>Rebuild the <em>system</em>.</h1></div>
             <div class="row">
-                <div class="col-md-6 align-self-center">
+                <div class="col-md-7 align-self-center">
                     <img src="{{ "/assets/img/hero-image.png" | relative_url }}" class="img-fluid">                   
                 </div>
-                <div class="col-md-6 align-self-center">
-                    <p class="xlarge-text">Light & Light Academy exists for people who are done with half-measures. We look at everything, from your career to your relationships, finances, health and inner life and we make a full reboot. Not one problem at a time.</p>
-                    <p class="xlarge-text mt-4"><strong>All of it, at once, from the root.</strong></p>
+                <div class="col-md-5 align-self-center">
+                    <p class="large-text">Light & Light Academy exists for people who are done with half-measures. We dive into every dimension of <em>you</em>, from your career to your relationships, finances, health and inner life and we make a full reboot. Not one problem at a time.</p>
+                    <p class="large-text mt-4"><strong>All of it, at once, from the root.</strong></p>
                     <a href="" class="button-cta my-3">I'm ready to do the real work</a>
                 </div>
             </div>
@@ -23,18 +23,19 @@ title: Light & Light Academy
     <section>
         <div class="container-xl mx-auto py-5 ">
         <div class="intro-feature-box p-5 my-4">
+            <h2 class="text-center mt-3 mb-3 text-white">No More Half-Measures</h2>
             <div class="row gx-5">
                 <div class="col-md-4 intro-feature">
-                <h3 class="mb-3 mt-2">We don't do band-aids</h3>
+                <h3 class="mb-3 mt-4">We don't do band-aids</h3>
                 <p>Therapy for this, a coach for that, a course for something else. It adds up to a lot of effort and not much shift. We work differently. We look at the whole picture, because the reason your life or career feels stuck is almost never just about work.</p>
                 </div>
                 <div class="col-md-4 intro-feature">
-                <h3 class="mb-3 mt-2">Rigorous and a little
+                <h3 class="mb-3 mt-4">Rigorous and a little
                 unexpected</h3>
                 <p>Yes, we use Myers-Briggs and SMART frameworks and many other time-tested methods. We also use astrology and Gabor Maté. If that combination surprises you, good... that tension is exactly where the real work happens.</p>
                 </div>
                 <div class="col-md-4 intro-feature">
-                <h3 class="mb-3 mt-2">It's not easy. It is fast.</h3>
+                <h3 class="mb-3 mt-4">It's not easy. It is fast.</h3>
                 <p>Under a year. Full commitment required. This isn't a programme you drift through. You show up, you do the work, and things actually change. Permanently.</p>
                 </div>
             </div>
@@ -60,8 +61,8 @@ title: Light & Light Academy
                 </h2>
                 <div id="collapseCareer" class="accordion-collapse collapse show" data-bs-parent="#lifeAccordion">
                     <div class="accordion-body">
-                    <p class="small fw-bold">What is career to you? What are your values?</p>
-                    <p class="text-muted small">We get into the real stuff: identity, fear, and ambition.</p>
+                    <p class="fw-bold">What is career to you? What are your values? How do you position yourself with the authority or power figure?</p>
+                    <p class="text-muted">We get into the real stuff: identity, fear, ambition, and what you'd actually be doing if you stopped making excuses for everyone else's comfort.</p>
                     <a href="#" class="btn btn-dark btn-sm rounded-pill px-3">See a sample of the learning module</a>
                     </div>
                 </div>
@@ -77,14 +78,24 @@ title: Light & Light Academy
                 </div>
                 </div>
                 <div class="accordion-item custom-accordion-item border-darkblue mb-3">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed fw-bold text-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFamily" data-rotate="90">
-                    Family
-                    </button>
-                </h2>
-                <div id="collapseFamily" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
-                    <div class="accordion-body">Family content goes here...</div>
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-darkblue" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFamily" data-rotate="90">
+                        Family
+                        </button>
+                    </h2>
+                    <div id="collapseFamily" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
+                        <div class="accordion-body">Family content goes here...</div>
+                    </div>
                 </div>
+                <div class="accordion-item custom-accordion-item border-red mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-red" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLove" data-rotate="135">
+                        Love
+                        </button>
+                    </h2>
+                    <div id="collapseLove" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
+                        <div class="accordion-body">Family content goes here...</div>
+                    </div>
                 </div>
                 </div>
             </div>
