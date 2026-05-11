@@ -161,11 +161,17 @@ p {
 
 em {
   font-style: italic;
-  
+  color: var(--color-primary);
 }
 
 strong {
   font-weight: 600;
+}
+
+a{
+  color: #077ed3;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 /* --- Alternative Text Sizes --- */
@@ -272,6 +278,23 @@ strong {
   font-size:2em;
 }
 
+.intro-stat {
+  background-color: var(--color-background);
+  color:var(--color-primary);
+  border-radius: 0.9em;
+}
+
+.intro-stat-number {
+  font-size: var(--font-size-6);
+  line-height: var(--line-height-6);
+  letter-spacing: var(--letter-space-6);
+  font-family: var(--font-family-serif);
+}
+
+.intro-stat p{
+  color:var(--color-primary);
+  margin-bottom: 0;
+}
 .small-container {
   max-width: 800px;
   margin: 0 auto;
