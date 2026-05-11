@@ -107,11 +107,57 @@ title: Light & Light Academy
                         </button>
                     </h2>
                     <div id="collapseLove" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
-                        <div class="accordion-body">Family content goes here...</div>
+                        <div class="accordion-body">Love content goes here...</div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item border-yellow mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFriends" data-rotate="180">
+                        Friends
+                        </button>
+                    </h2>
+                    <div id="collapseFriends" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
+                        <div class="accordion-body">Friends content goes here...</div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item border-pink mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-pink" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpirituality" data-rotate="225">
+                        Spirituality
+                        </button>
+                    </h2>
+                    <div id="collapseSpirituality" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
+                        <div class="accordion-body">Spirituality content goes here...</div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item border-purple mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-purple" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFun" data-rotate="270">
+                        Fun
+                        </button>
+                    </h2>
+                    <div id="collapseFun" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
+                        <div class="accordion-body">Fun content goes here...</div>
+                    </div>
+                </div>
+                <div class="accordion-item custom-accordion-item border-lightgreen mb-3">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold text-lightgreen" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMoney" data-rotate="315">
+                        Money
+                        </button>
+                    </h2>
+                    <div id="collapseMoney" class="accordion-collapse collapse" data-bs-parent="#lifeAccordion">
+                        <div class="accordion-body">Money content goes here...</div>
                     </div>
                 </div>
                 </div>
             </div>
+    </section>
+    <section>
+        <div class="container-xl">
+            <div class="bio">
+            </div>
+        </div>
     </section>
 </main>
 <script>
