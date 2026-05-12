@@ -11,7 +11,11 @@ title: Light & Light Academy
             <div class="col-md-7 mx-auto text-center ">
                     <p class="large-text">Light & Light Academy exists for people who are done with half-measures. We dive into every dimension of <em>you</em>, from your career to your relationships, finances, health and inner life and we make a full reboot. Not one problem at a time. <strong>All of it, at once, from the root.</strong></p>
                     <a href="" class="button-cta my-3">I'm ready to do the real work</a>
-                    <p class="my-4">Researched counseling methods for unconventional growth. Sessions in-person or online. Your first discovery session is on us.</p>
+                    <ul class="my-4 text-muted">
+                    <li class="mb-2"><span class="material-symbols-outlined" style="vertical-align: top">cognition_2</span> Researched counseling methods for unconventional growth. </li>
+                    <li class="mb-2"><span class="material-symbols-outlined" style="vertical-align: top">chair</span> Sessions in-person or online.</li>
+                    <li class="mb-2"><span class="material-symbols-outlined" style="vertical-align: top">all_match</span> Your first discovery & meet session is on us.</li>
+                    </ul>
             </div>
             <div class="container mt-5">
                 <div class="row justify-content-center">
@@ -191,5 +195,15 @@ window.addEventListener('scroll', function() {
   if (wheel) {
     wheel.style.transform = `rotate(${degree}deg)`;
   }
+});
+
+const ctaButton = document.querySelector('.button-cta');
+
+ctaButton.addEventListener('mouseenter', () => {
+  document.body.style.backgroundColor = 'rgb(33, 59, 78)';
+});
+
+ctaButton.addEventListener('mouseleave', () => {
+  document.body.style.backgroundColor = ''; // Reverts to original CSS color
 });
 </script>

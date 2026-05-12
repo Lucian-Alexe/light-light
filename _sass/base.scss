@@ -120,6 +120,7 @@ body {
   line-height: var(--line-height);
   letter-spacing: var(--letter-space);
   background-color: var(--color-background);
+  transition: background-color 1.6s ease;
 }
 
 /* --- Headers --- */
@@ -174,6 +175,17 @@ a{
   transition: color 0.3s ease;
 }
 
+
+ul {
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size);
+  color: var(--color-primary);
+}
+
+li {
+  color:var(--color-primary);
+}
+
 /* --- Alternative Text Sizes --- */
 
 :is(p, span, a, ul, ol, dl, li, dt, dd, label, blockquote, code) {
@@ -194,8 +206,18 @@ a{
   }
 }
 
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
 .homepage-header {
-  background-color: var(--color-background);
+  
 }
 
 .logo img {
@@ -214,7 +236,7 @@ a{
   margin-top:2em 0;
   display:inline-block;
   border-radius: 0.6em;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   transition: all 0.35s ease;
 }

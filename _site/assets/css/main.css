@@ -27,7 +27,7 @@ input { -webkit-appearance: none; border-radius: 0; }
 
 :root { /* --- Colors --- */ --color-primary: #213b4e; --color-secondary: #cecece; --color-background: #f5fbff; /* --- Font Families --- */ --font-family-sans: 'Inter', sans-serif; --font-family-serif: 'Lora', serif; }
 
-body { font-size: var(--font-size); line-height: var(--line-height); letter-spacing: var(--letter-space); background-color: var(--color-background); }
+body { font-size: var(--font-size); line-height: var(--line-height); letter-spacing: var(--letter-space); background-color: var(--color-background); transition: background-color 1.6s ease; }
 
 /* --- Headers --- */
 :is(h1, h2, h3) { font-weight: 500; }
@@ -46,16 +46,20 @@ strong { font-weight: 600; }
 
 a { color: #077ed3; text-decoration: none; transition: color 0.3s ease; }
 
+ul { font-family: var(--font-family-sans); font-size: var(--font-size); color: var(--color-primary); }
+
+li { color: var(--color-primary); }
+
 /* --- Alternative Text Sizes --- */
 :is(p, span, a, ul, ol, dl, li, dt, dd, label, blockquote, code).small-text { font-size: var(--font-size-1b); line-height: var(--line-height-1b); letter-spacing: var(--letter-space-1b); }
 :is(p, span, a, ul, ol, dl, li, dt, dd, label, blockquote, code).large-text { font-size: var(--font-size-1); line-height: var(--line-height-1); letter-spacing: var(--letter-space-1); }
 :is(p, span, a, ul, ol, dl, li, dt, dd, label, blockquote, code).xlarge-text { font-size: var(--font-size-2); line-height: var(--line-height-2); letter-spacing: var(--letter-space-2); }
 
-.homepage-header { background-color: var(--color-background); }
+.material-symbols-outlined { font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24; }
 
 .logo img { max-height: 100px; width: auto; }
 
-.button-cta { font-family: var(--font-family-sans); font-size: var(--font-size); background-color: white; border: 2px solid var(--color-secondary); color: var(--color-primary); padding: 1.2em 1em; text-decoration: none; margin-top: 2em 0; display: inline-block; border-radius: 0.6em; font-weight: 600; text-transform: uppercase; transition: all 0.35s ease; }
+.button-cta { font-family: var(--font-family-sans); font-size: var(--font-size); background-color: white; border: 2px solid var(--color-secondary); color: var(--color-primary); padding: 1.2em 1em; text-decoration: none; margin-top: 2em 0; display: inline-block; border-radius: 0.6em; font-weight: 800; text-transform: uppercase; transition: all 0.35s ease; }
 
 .button-cta::after { content: "➜"; margin-left: 0.3em; transition: all 0.35s ease; }
 
